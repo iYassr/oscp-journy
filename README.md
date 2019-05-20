@@ -27,12 +27,17 @@ Linux
     - /etc/network/interfaces  
      `` auto eth0   
     iface eth0 inet dhcp/static``
+  - set new ip   
+  ```  
+   ifconfig eth0 $ip netmask 255.255.255.0 up
+   service networking restart
+   ping 8.8.8.8
+   ping google.com
+  ```
 - find files modfied last 60 min  
  ` find / -cmin 60 `  
 - use vim bindings terminal  
-  `set -o vi`
-
-
+  `set -o vi` 
 
 
 
