@@ -1,4 +1,4 @@
 #! /bin/bash
 git add .
 git commit -m 'change' 
-git push origin master' 
+git push origin master
