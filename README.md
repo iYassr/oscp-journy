@@ -150,21 +150,21 @@ for url in urls():
 ===========================
 
 
-2019-05-21 05:45:06  Day 1 
-setting up the environment
-ssh tunnel
-ssh public/private key
-vmware setup
-debugging
-vscode 
-burp issur
-soo much troubleshooting, 
+**2019-05-21 05:45:06  Day 1**    
+setting up the environment   
+ssh tunnel   
+ssh public/private key   
+vmware setup   
+debugging   
+vscode    
+burp issur   
+soo much troubleshooting,    
 
-2019-05-21 05:45:06  Day 2 
-scripted networking confifurations, 
-started wrting notes, 
-started the pdf 
-page 56/380 haha 
+**2019-05-21 05:45:06  Day 2**  
+scripted networking confifurations,   
+started wrting notes,   
+started the pdf   
+page 56/380 haha   
 
-I feel pretty tired now, i need to sleep asap 
-alhamdulilah 
+I feel pretty tired now, i need to sleep asap   
+alhamdulilah   
