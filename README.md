@@ -1,5 +1,6 @@
 # OSCP Journy - Yasser 
-in the name of Allah, the most gracful the most merciful  
+in the name of Allah, the most gracful the most merciful 
+
 **2019-05-20 23:43:53** 
 
 ## Table of Content
@@ -12,6 +13,8 @@ in the name of Allah, the most gracful the most merciful
 - [Buffer Over Flow](#buffer-over-flow)
 - [Privilege Escalation](#privilege-escalation)
 - [VMware](#vmware)
+- [Python](#python)
+- [## Diary](#diary)
 
 
 Linux 
@@ -37,7 +40,23 @@ Linux
 - find files modfied last 60 min  
  ` find / -cmin 60 `  
 - use vim bindings terminal  
-  `set -o vi` 
+  `set -o vi`
+- string manipulation
+    - cut by delimter, field    
+  `cut -d '/' -f 3`
+    - sort by unique  
+    `sort -u`
+    - sort ips of apache logs , -c for count, u for uniq, r for reverse, n for numerical sort, easy
+    ` cat access.log | cut -d " " -f 1 | sort | uniq -c | sort -rn`
+    - grep
+        - most hits, huh? now you have to find what he does
+        ` grep $ip | cut -d '"' -f2 | sort -u
+        - B = Before , A = After   
+        ` grep 'string' apache.log -B1 -A2 `
+    
+- for loop  
+  ` for url in $(cat list.txt); do host $url; done`
+
 
 
 
@@ -112,3 +131,40 @@ VMware
     `sudo vmhgfs-fuse .host:/ /root/shared_folder -o allow_other -o uid=1000`
     - linux  
     `sudo vmhgfs-fuse .host:/ /mnt/hgfs/ -o allow_other -o uid=1000`
+
+
+Python
+===========================
+
+- read from file and loop
+```
+urls = open('file', 'r/w/b')
+for url in urls():
+    print(os.system('host {}'.format(url)))
+```
+
+
+
+
+## Diary 
+===========================
+
+
+2019-05-21 05:45:06  Day 1 
+setting up the environment
+ssh tunnel
+ssh public/private key
+vmware setup
+debugging
+vscode 
+burp issur
+soo much troubleshooting, 
+
+2019-05-21 05:45:06  Day 2 
+scripted networking confifurations, 
+started wrting notes, 
+started the pdf 
+page 56/380 haha 
+
+I feel pretty tired now, i need to sleep asap 
+alhamdulilah 
