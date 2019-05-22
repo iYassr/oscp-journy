@@ -1,0 +1,85 @@
+
+Warning: Pycurl is not compiled against Openssl. Wfuzz might not work correctly when fuzzing SSL sites. Check Wfuzz's documentation for more information.
+
+
+ [92m *******************************************************************
+*                                                                 *
+* | |_| |__   ___    /\  /\__ _ _ ____   _____  ___| |_ ___ _ __  *
+* | __| '_ \ / _ \  / /_/ / _` | '__\ \ / / _ \/ __| __/ _ \ '__| *
+* | |_| | | |  __/ / __  / (_| | |   \ V /  __/\__ \ ||  __/ |    *
+*  \__|_| |_|\___| \/ /_/ \__,_|_|    \_/ \___||___/\__\___|_|    *
+*                                                                 *
+* TheHarvester Ver. 2.7.2                                         *
+* Coded by Christian Martorella                                   *
+* Edge-Security Research                                          *
+* cmartorella@edge-security.com                                   *
+*******************************************************************[94m
+
+
+[-] Starting harvesting process for domain: saudipayments
+
+[-] Searching in Linkedin..
+	Searching 100 results..
+	Searching 200 results..
+	Searching 300 results..
+	Searching 400 results..
+	Searching 500 results..
+Users from Linkedin:
+-------------------
+Ziad Al Yousef - Managing Director - SAUDI PAYMENTS
+Alhanouf Alsubaie - Senior Manager - Saudi payments
+Wael Al-Saeed - BI Expert - SAUDI PAYMENTS
+Bader Alamro - Marketing Director - SAUDI PAYMENTS
+Abdullah AlBawardy - Sales Manager - SAUDI PAYMENTS
+Salman Alshenif - Project Controller - SAUDI PAYMENTS
+Miteb Abuhaimad - Network Manager - SAUDI PAYMENTS
+Abdulaziz Abanmi - VP Technology - SAUDI PAYMENTS
+Abdulaziz Al Afaleg MBA
+Ghaida Alkhodair - Data Scientist - SAUDI PAYMENTS
+Khalid Alshammari - Director - Saudi Payments
+Sulaiman Al-Orf - Manager - Saudipayments
+Al Anoud AlGhonaim - Promotion Lead - SAUDI PAYMENTS
+Naif Alansari - HSS Manager - SAUDI PAYMENTS
+Musaad Alsalman - Certification Expert - SAUDI PAYMENTS
+Hessa AlBarrak - Relationship Officer - SAUDI PAYMENTS
+Mariam AlArfaj - Solutions Architect - SAUDI PAYMENTS
+Hussain Alshlawi - Sales Manager - SAUDI PAYMENTS
+Yasir Alhumaidi - Solutions Architect - SAUDI PAYMENTS
+Mansor.A Alfarhan - Portfolio Manager - SAUDI PAYMENTS
+Areej AlDakhil
+Paul Nicholls - Solution Architect - SADAD Payment System
+Musaifer Alosaimi - CIO - SABB
+Manal algarni - Business Analyst - SADAD Payment System
+alireza noori - NOC - SADAD Payment System
+Naif Al AbdulKareem - Board Member - HSBC Saudi Arabia
+Abdulmalik Al Sheikh
+Jesa Paymalan - Jan S puso mo - SAUDI
+Najd Almousa - Accountant - SADAD Payment System
+Ibrahim Al Humaid - Human Resources - Bank Muscat - KSA
+Abdulaziz Al Afaleg MBA
+Bandar Al Qubisy - Head of Cards Business - AlRajhi Bank
+Sara Alarifi - Partnerships Manager - Fintech Saudi
+HR HSBC Saudi - Recruiter - HSBC
+Mohammed Almisfer
+Yasser Al-Eissa - Network Manager - SAMA
+Mashael AlWahhabi - HR Officer - Strategic Gears
+Abrar AlRashidi - Project Engineer - Wipro Limited
+Abdullah Alrasheed
+Khalid Alshathri - Network Specialist - CITC
+Lamya Alzeer - Accountant - Musaed El seif and Sons Co.
+Loulou Aleen
+Rajiv Shukla
+Shaden Althenyan - Process Specialist - Confidential
+Dr .Manar Alzeer - lab director - futurelab company
+Amjad Alshaya - MIS Analyst - Agilent Technologies
+Ghada Almutairi
+Layla Alzamil
+Rehana Ahamed - Automation Tester - DXC Technology
+Ziyad Youssef - Manager - Layli Al Jabal
+Asim Alotaibi - Project Manager - Zain KSA
+Yousef Aljeraiss - Director - SAMA
+Mansour Alotaibi - Senior Operations Officer - Al Rajhi Bank
+christine mercido - self employed - Private company
+umar daraz - Police - Benevolent Order of Polic
+MASHARI ALARAIFI
+Mando Gates - Software Developer - MFS

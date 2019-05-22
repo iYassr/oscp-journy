@@ -1,0 +1,4 @@
+# Nmap 7.60 scan initiated Wed May 22 21:51:01 2019 as: nmap -oG nmap_greppable_format 127.0.0.1
+Host: 127.0.0.1 (localhost)	Status: Up
+Host: 127.0.0.1 (localhost)	Ports: 22/open/tcp//ssh///, 135/open/tcp//msrpc///, 445/open/tcp//microsoft-ds///, 902/open/tcp//iss-realsecure///, 912/open/tcp//apex-mesh///, 6000/open/tcp//X11///, 8080/open/tcp//http-proxy///, 8888/open/tcp//sun-answerbook///	Ignored State: closed (992)
+# Nmap done at Wed May 22 21:51:01 2019 -- 1 IP address (1 host up) scanned in 0.13 seconds
