@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.70 scan initiated Wed May 22 20:51:02 2019 as: nmap -p 445,139 -&#45;script=smb-vuln-ms08-067 -iL smb_hosts_fltered -oA smb_vulns -->
+<nmaprun scanner="nmap" args="nmap -p 445,139 -&#45;script=smb-vuln-ms08-067 -iL smb_hosts_fltered -oA smb_vulns" start="1558572662" startstr="Wed May 22 20:51:02 2019" version="7.70" xmloutputversion="1.04">
+<scaninfo type="syn" protocol="tcp" numservices="2" services="139,445"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<taskprogress task="SYN Stealth Scan" time="1558572663" percent="57.89" remaining="0" etc="1558572663"/>
+<taskprogress task="SYN Stealth Scan" time="1558572664" percent="76.32" remaining="1" etc="1558572664"/>
+<taskprogress task="SYN Stealth Scan" time="1558572665" percent="92.10" remaining="1" etc="1558572665"/>
+<taskprogress task="SYN Stealth Scan" time="1558572665" percent="94.74" remaining="1" etc="1558572665"/>
+<taskprogress task="SYN Stealth Scan" time="1558572665" percent="96.05" remaining="1" etc="1558572665"/>
+<taskprogress task="SYN Stealth Scan" time="1558572665" percent="100.00" remaining="1" etc="1558572665"/>
+<taskprogress task="SYN Stealth Scan" time="1558572666" percent="100.00" remaining="1" etc="1558572666"/>
+<taskprogress task="NSE" time="1558572666" percent="5.26" remaining="0" etc="1558572666"/>
+<taskprogress task="NSE" time="1558572667" percent="5.26" remaining="18" etc="1558572685"/>
+<taskprogress task="NSE" time="1558572667" percent="5.26" remaining="18" etc="1558572685"/>
+<taskprogress task="NSE" time="1558572668" percent="10.53" remaining="18" etc="1558572685"/>
+<taskprogress task="NSE" time="1558572668" percent="10.53" remaining="18" etc="1558572685"/>
+<taskprogress task="NSE" time="1558572668" percent="10.53" remaining="18" etc="1558572685"/>
+<taskprogress task="NSE" time="1558572668" percent="10.53" remaining="18" etc="1558572685"/>
+<taskprogress task="NSE" time="1558572669" percent="10.53" remaining="26" etc="1558572695"/>
+<taskprogress task="NSE" time="1558572669" percent="15.79" remaining="16" etc="1558572685"/>
+<taskprogress task="NSE" time="1558572669" percent="15.79" remaining="16" etc="1558572685"/>
+<taskprogress task="NSE" time="1558572669" percent="15.79" remaining="16" etc="1558572685"/>
+<taskprogress task="NSE" time="1558572669" percent="15.79" remaining="16" etc="1558572685"/>
+<taskprogress task="NSE" time="1558572669" percent="15.79" remaining="16" etc="1558572685"/>
+<taskprogress task="NSE" time="1558572669" percent="15.79" remaining="16" etc="1558572685"/>
+<taskprogress task="NSE" time="1558572670" percent="15.79" remaining="22" etc="1558572691"/>
+<taskprogress task="NSE" time="1558572670" percent="15.79" remaining="22" etc="1558572691"/>
+<taskprogress task="NSE" time="1558572670" percent="15.79" remaining="22" etc="1558572691"/>
+<taskprogress task="NSE" time="1558572670" percent="15.79" remaining="22" etc="1558572691"/>
+<taskprogress task="NSE" time="1558572670" percent="15.79" remaining="22" etc="1558572691"/>
+<taskprogress task="NSE" time="1558572670" percent="15.79" remaining="22" etc="1558572691"/>
+<taskprogress task="NSE" time="1558572670" percent="15.79" remaining="22" etc="1558572691"/>
+<taskprogress task="NSE" time="1558572670" percent="15.79" remaining="22" etc="1558572691"/>
+<taskprogress task="NSE" time="1558572670" percent="15.79" remaining="22" etc="1558572691"/>
+<taskprogress task="NSE" time="1558572670" percent="15.79" remaining="22" etc="1558572691"/>
+<taskprogress task="NSE" time="1558572670" percent="15.79" remaining="22" etc="1558572691"/>
+<taskprogress task="NSE" time="1558572670" percent="15.79" remaining="22" etc="1558572691"/>
+<taskprogress task="NSE" time="1558572670" percent="15.79" remaining="22" etc="1558572691"/>
+<taskprogress task="NSE" time="1558572670" percent="15.79" remaining="22" etc="1558572691"/>
+<taskprogress task="NSE" time="1558572703" percent="84.21" remaining="7" etc="1558572710"/>
+<taskprogress task="NSE" time="1558572704" percent="84.21" remaining="8" etc="1558572711"/>
+<taskprogress task="NSE" time="1558572704" percent="84.21" remaining="8" etc="1558572711"/>
+<taskprogress task="NSE" time="1558572704" percent="94.74" remaining="3" etc="1558572706"/>
+<taskprogress task="NSE" time="1558572705" percent="94.74" remaining="3" etc="1558572707"/>
+<taskprogress task="NSE" time="1558572705" percent="94.74" remaining="3" etc="1558572707"/>
+<taskprogress task="NSE" time="1558572705" percent="94.74" remaining="3" etc="1558572707"/>
+<taskprogress task="NSE" time="1558572705" percent="94.74" remaining="3" etc="1558572707"/>
+<taskprogress task="NSE" time="1558572705" percent="94.74" remaining="3" etc="1558572707"/>
+<taskprogress task="NSE" time="1558572705" percent="94.74" remaining="3" etc="1558572707"/>
+<taskprogress task="NSE" time="1558572705" percent="94.74" remaining="3" etc="1558572707"/>
+<taskprogress task="NSE" time="1558572706" percent="94.74" remaining="3" etc="1558572708"/>
+<taskprogress task="NSE" time="1558572706" percent="94.74" remaining="3" etc="1558572708"/>
+<taskprogress task="NSE" time="1558572706" percent="94.74" remaining="3" etc="1558572708"/>
+<taskprogress task="NSE" time="1558572706" percent="94.74" remaining="3" etc="1558572708"/>
+<taskprogress task="NSE" time="1558572706" percent="94.74" remaining="3" etc="1558572708"/>
+<taskprogress task="NSE" time="1558572706" percent="94.74" remaining="3" etc="1558572708"/>
+<taskprogress task="NSE" time="1558572706" percent="94.74" remaining="3" etc="1558572708"/>
+<taskprogress task="NSE" time="1558572706" percent="94.74" remaining="3" etc="1558572708"/>
+<taskprogress task="NSE" time="1558572706" percent="94.74" remaining="3" etc="1558572708"/>
+<host starttime="1558572662" endtime="1558572688"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.11.1.128" addrtype="ipv4"/>
+<address addr="00:50:56:93:4A:E1" addrtype="mac" vendor="VMware"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="139"><state state="open" reason="syn-ack" reason_ttl="128"/><service name="netbios-ssn" method="table" conf="3"/></port>
+<port protocol="tcp" portid="445"><state state="open" reason="syn-ack" reason_ttl="128"/><service name="microsoft-ds" method="table" conf="3"/></port>
+</ports>
+<times srtt="77276" rttvar="109208" to="514108"/>
+</host>
+<host starttime="1558572662" endtime="1558572702"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.11.1.136" addrtype="ipv4"/>
+<address addr="00:50:56:93:57:34" addrtype="mac" vendor="VMware"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="139"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="netbios-ssn" method="table" conf="3"/></port>
+<port protocol="tcp" portid="445"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="microsoft-ds" method="table" conf="3"/></port>
+</ports>
+<times srtt="224902" rttvar="128009" to="736938"/>
+</host>
+<host starttime="1558572662" endtime="1558572688"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.11.1.145" addrtype="ipv4"/>
+<address addr="00:50:56:89:59:1B" addrtype="mac" vendor="VMware"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="139"><state state="open" reason="syn-ack" reason_ttl="128"/><service name="netbios-ssn" method="table" conf="3"/></port>
+<port protocol="tcp" portid="445"><state state="open" reason="syn-ack" reason_ttl="128"/><service name="microsoft-ds" method="table" conf="3"/></port>
+</ports>
+<times srtt="255564" rttvar="179532" to="973692"/>
+</host>
+<host starttime="1558572662" endtime="1558572695"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.11.1.202" addrtype="ipv4"/>
+<address addr="00:50:56:89:1F:9B" addrtype="mac" vendor="VMware"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="139"><state state="open" reason="syn-ack" reason_ttl="128"/><service name="netbios-ssn" method="table" conf="3"/></port>
+<port protocol="tcp" portid="445"><state state="open" reason="syn-ack" reason_ttl="128"/><service name="microsoft-ds" method="table" conf="3"/></port>
+</ports>
+<times srtt="226756" rttvar="130661" to="749400"/>
+</host>
+<host starttime="1558572662" endtime="1558572702"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.11.1.218" addrtype="ipv4"/>
+<address addr="00:50:56:93:1E:A2" addrtype="mac" vendor="VMware"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="139"><state state="open" reason="syn-ack" reason_ttl="128"/><service name="netbios-ssn" method="table" conf="3"/></port>
+<port protocol="tcp" portid="445"><state state="open" reason="syn-ack" reason_ttl="128"/><service name="microsoft-ds" method="table" conf="3"/></port>
+</ports>
+<times srtt="164898" rttvar="151352" to="770306"/>
+</host>
+<host starttime="1558572662" endtime="1558572667"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.11.1.22" addrtype="ipv4"/>
+<address addr="00:50:56:89:1E:50" addrtype="mac" vendor="VMware"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="139"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="netbios-ssn" method="table" conf="3"/></port>
+<port protocol="tcp" portid="445"><state state="closed" reason="reset" reason_ttl="255"/><service name="microsoft-ds" method="table" conf="3"/></port>
+</ports>
+<times srtt="98549" rttvar="133308" to="631781"/>
+</host>
+<host starttime="1558572662" endtime="1558572695"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.11.1.220" addrtype="ipv4"/>
+<address addr="00:50:56:93:0B:6B" addrtype="mac" vendor="VMware"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="139"><state state="open" reason="syn-ack" reason_ttl="128"/><service name="netbios-ssn" method="table" conf="3"/></port>
+<port protocol="tcp" portid="445"><state state="open" reason="syn-ack" reason_ttl="128"/><service name="microsoft-ds" method="table" conf="3"/></port>
+</ports>
+<times srtt="257984" rttvar="205533" to="1080116"/>
+</host>
+<host starttime="1558572662" endtime="1558572704"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.11.1.223" addrtype="ipv4"/>
+<address addr="00:50:56:89:72:AE" addrtype="mac" vendor="VMware"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="139"><state state="open" reason="syn-ack" reason_ttl="128"/><service name="netbios-ssn" method="table" conf="3"/></port>
+<port protocol="tcp" portid="445"><state state="open" reason="syn-ack" reason_ttl="128"/><service name="microsoft-ds" method="table" conf="3"/></port>
+</ports>
+<times srtt="171912" rttvar="150518" to="773984"/>
+</host>
+<host starttime="1558572662" endtime="1558572699"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.11.1.227" addrtype="ipv4"/>
+<address addr="00:50:56:89:33:B2" addrtype="mac" vendor="VMware"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="139"><state state="open" reason="syn-ack" reason_ttl="128"/><service name="netbios-ssn" method="table" conf="3"/></port>
+<port protocol="tcp" portid="445"><state state="open" reason="syn-ack" reason_ttl="128"/><service name="microsoft-ds" method="table" conf="3"/></port>
+</ports>
+<hostscript><script id="smb-vuln-ms08-067" output="&#xa;  VULNERABLE:&#xa;  Microsoft Windows system vulnerable to remote code execution (MS08-067)&#xa;    State: VULNERABLE&#xa;    IDs:  CVE:CVE-2008-4250&#xa;          The Server service in Microsoft Windows 2000 SP4, XP SP2 and SP3, Server 2003 SP1 and SP2,&#xa;          Vista Gold and SP1, Server 2008, and 7 Pre-Beta allows remote attackers to execute arbitrary&#xa;          code via a crafted RPC request that triggers the overflow during path canonicalization.&#xa;          &#xa;    Disclosure date: 2008-10-23&#xa;    References:&#xa;      https://technet.microsoft.com/en-us/library/security/ms08-067.aspx&#xa;      https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-4250&#xa;"><table key="CVE-2008-4250">
+<elem key="title">Microsoft Windows system vulnerable to remote code execution (MS08-067)</elem>
+<elem key="state">VULNERABLE</elem>
+<table key="ids">
+<elem>CVE:CVE-2008-4250</elem>
+</table>
+<table key="description">
+<elem>    The Server service in Microsoft Windows 2000 SP4, XP SP2 and SP3, Server 2003 SP1 and SP2,&#xa;    Vista Gold and SP1, Server 2008, and 7 Pre-Beta allows remote attackers to execute arbitrary&#xa;    code via a crafted RPC request that triggers the overflow during path canonicalization.&#xa;    </elem>
+</table>
+<table key="dates">
+<table key="disclosure">
+<elem key="month">10</elem>
+<elem key="day">23</elem>
+<elem key="year">2008</elem>
+</table>
+</table>
+<elem key="disclosure">2008-10-23</elem>
+<table key="refs">
+<elem>https://technet.microsoft.com/en-us/library/security/ms08-067.aspx</elem>
+<elem>https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-4250</elem>
+</table>
+</table>
+</script></hostscript><times srtt="146563" rttvar="115464" to="608419"/>
+</host>
+<host starttime="1558572662" endtime="1558572702"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.11.1.229" addrtype="ipv4"/>
+<address addr="00:50:56:93:14:DF" addrtype="mac" vendor="VMware"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="139"><state state="open" reason="syn-ack" reason_ttl="128"/><service name="netbios-ssn" method="table" conf="3"/></port>
+<port protocol="tcp" portid="445"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="microsoft-ds" method="table" conf="3"/></port>
+</ports>
+<hostscript><script id="smb-vuln-ms08-067" output="&#xa;  VULNERABLE:&#xa;  Microsoft Windows system vulnerable to remote code execution (MS08-067)&#xa;    State: VULNERABLE&#xa;    IDs:  CVE:CVE-2008-4250&#xa;          The Server service in Microsoft Windows 2000 SP4, XP SP2 and SP3, Server 2003 SP1 and SP2,&#xa;          Vista Gold and SP1, Server 2008, and 7 Pre-Beta allows remote attackers to execute arbitrary&#xa;          code via a crafted RPC request that triggers the overflow during path canonicalization.&#xa;          &#xa;    Disclosure date: 2008-10-23&#xa;    References:&#xa;      https://technet.microsoft.com/en-us/library/security/ms08-067.aspx&#xa;      https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-4250&#xa;"><table key="CVE-2008-4250">
+<elem key="title">Microsoft Windows system vulnerable to remote code execution (MS08-067)</elem>
+<elem key="state">VULNERABLE</elem>
+<table key="ids">
+<elem>CVE:CVE-2008-4250</elem>
+</table>
+<table key="description">
+<elem>    The Server service in Microsoft Windows 2000 SP4, XP SP2 and SP3, Server 2003 SP1 and SP2,&#xa;    Vista Gold and SP1, Server 2008, and 7 Pre-Beta allows remote attackers to execute arbitrary&#xa;    code via a crafted RPC request that triggers the overflow during path canonicalization.&#xa;    </elem>
+</table>
+<table key="dates">
+<table key="disclosure">
+<elem key="month">10</elem>
+<elem key="day">23</elem>
+<elem key="year">2008</elem>
+</table>
+</table>
+<elem key="disclosure">2008-10-23</elem>
+<table key="refs">
+<elem>https://technet.microsoft.com/en-us/library/security/ms08-067.aspx</elem>
+<elem>https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-4250</elem>
+</table>
+</table>
+</script></hostscript><times srtt="226177" rttvar="171820" to="913457"/>
+</host>
+<host starttime="1558572662" endtime="1558572697"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.11.1.230" addrtype="ipv4"/>
+<address addr="00:50:56:89:14:2B" addrtype="mac" vendor="VMware"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="139"><state state="open" reason="syn-ack" reason_ttl="128"/><service name="netbios-ssn" method="table" conf="3"/></port>
+<port protocol="tcp" portid="445"><state state="open" reason="syn-ack" reason_ttl="128"/><service name="microsoft-ds" method="table" conf="3"/></port>
+</ports>
+<times srtt="256026" rttvar="178772" to="971114"/>
+</host>
+<host starttime="1558572662" endtime="1558572699"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.11.1.24" addrtype="ipv4"/>
+<address addr="00:50:56:89:37:58" addrtype="mac" vendor="VMware"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="139"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="netbios-ssn" method="table" conf="3"/></port>
+<port protocol="tcp" portid="445"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="microsoft-ds" method="table" conf="3"/></port>
+</ports>
+<times srtt="98629" rttvar="133277" to="631737"/>
+</host>
+<host starttime="1558572662" endtime="1558572704"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.11.1.31" addrtype="ipv4"/>
+<address addr="00:50:56:89:4A:C6" addrtype="mac" vendor="VMware"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="139"><state state="open" reason="syn-ack" reason_ttl="128"/><service name="netbios-ssn" method="table" conf="3"/></port>
+<port protocol="tcp" portid="445"><state state="open" reason="syn-ack" reason_ttl="128"/><service name="microsoft-ds" method="table" conf="3"/></port>
+</ports>
+<times srtt="98624" rttvar="133305" to="631844"/>
+</host>
+<host starttime="1558572662" endtime="1558572666"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.11.1.49" addrtype="ipv4"/>
+<address addr="00:50:56:89:0B:AF" addrtype="mac" vendor="VMware"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="139"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="netbios-ssn" method="table" conf="3"/></port>
+<port protocol="tcp" portid="445"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="microsoft-ds" method="table" conf="3"/></port>
+</ports>
+<times srtt="22864" rttvar="22864" to="114320"/>
+</host>
+<host starttime="1558572662" endtime="1558572736"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.11.1.5" addrtype="ipv4"/>
+<address addr="00:50:56:89:7E:0D" addrtype="mac" vendor="VMware"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="139"><state state="open" reason="syn-ack" reason_ttl="128"/><service name="netbios-ssn" method="table" conf="3"/></port>
+<port protocol="tcp" portid="445"><state state="open" reason="syn-ack" reason_ttl="128"/><service name="microsoft-ds" method="table" conf="3"/></port>
+</ports>
+<hostscript><script id="smb-vuln-ms08-067" output="&#xa;  VULNERABLE:&#xa;  Microsoft Windows system vulnerable to remote code execution (MS08-067)&#xa;    State: LIKELY VULNERABLE&#xa;    IDs:  CVE:CVE-2008-4250&#xa;          The Server service in Microsoft Windows 2000 SP4, XP SP2 and SP3, Server 2003 SP1 and SP2,&#xa;          Vista Gold and SP1, Server 2008, and 7 Pre-Beta allows remote attackers to execute arbitrary&#xa;          code via a crafted RPC request that triggers the overflow during path canonicalization.&#xa;          &#xa;    Disclosure date: 2008-10-23&#xa;    References:&#xa;      https://technet.microsoft.com/en-us/library/security/ms08-067.aspx&#xa;      https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-4250&#xa;"><table key="CVE-2008-4250">
+<elem key="title">Microsoft Windows system vulnerable to remote code execution (MS08-067)</elem>
+<elem key="state">LIKELY VULNERABLE</elem>
+<table key="ids">
+<elem>CVE:CVE-2008-4250</elem>
+</table>
+<table key="description">
+<elem>    The Server service in Microsoft Windows 2000 SP4, XP SP2 and SP3, Server 2003 SP1 and SP2,&#xa;    Vista Gold and SP1, Server 2008, and 7 Pre-Beta allows remote attackers to execute arbitrary&#xa;    code via a crafted RPC request that triggers the overflow during path canonicalization.&#xa;    </elem>
+</table>
+<table key="dates">
+<table key="disclosure">
+<elem key="month">10</elem>
+<elem key="day">23</elem>
+<elem key="year">2008</elem>
+</table>
+</table>
+<elem key="disclosure">2008-10-23</elem>
+<table key="refs">
+<elem>https://technet.microsoft.com/en-us/library/security/ms08-067.aspx</elem>
+<elem>https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-4250</elem>
+</table>
+</table>
+</script></hostscript><times srtt="226773" rttvar="130657" to="749401"/>
+</host>
+<host starttime="1558572662" endtime="1558572673"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.11.1.50" addrtype="ipv4"/>
+<address addr="00:50:56:89:09:5B" addrtype="mac" vendor="VMware"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="139"><state state="open" reason="syn-ack" reason_ttl="128"/><service name="netbios-ssn" method="table" conf="3"/></port>
+<port protocol="tcp" portid="445"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="microsoft-ds" method="table" conf="3"/></port>
+</ports>
+<times srtt="95275" rttvar="161282" to="740403"/>
+</host>
+<host starttime="1558572662" endtime="1558572690"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.11.1.73" addrtype="ipv4"/>
+<address addr="00:50:56:93:24:B3" addrtype="mac" vendor="VMware"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="139"><state state="open" reason="syn-ack" reason_ttl="128"/><service name="netbios-ssn" method="table" conf="3"/></port>
+<port protocol="tcp" portid="445"><state state="open" reason="syn-ack" reason_ttl="128"/><service name="microsoft-ds" method="table" conf="3"/></port>
+</ports>
+<times srtt="102664" rttvar="145581" to="684988"/>
+</host>
+<host starttime="1558572662" endtime="1558572687"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.11.1.75" addrtype="ipv4"/>
+<address addr="00:50:56:93:4A:82" addrtype="mac" vendor="VMware"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="139"><state state="open" reason="syn-ack" reason_ttl="128"/><service name="netbios-ssn" method="table" conf="3"/></port>
+<port protocol="tcp" portid="445"><state state="open" reason="syn-ack" reason_ttl="128"/><service name="microsoft-ds" method="table" conf="3"/></port>
+</ports>
+<times srtt="91517" rttvar="127064" to="599773"/>
+</host>
+<host starttime="1558572662" endtime="1558572669"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.11.1.8" addrtype="ipv4"/>
+<address addr="00:50:56:89:1D:09" addrtype="mac" vendor="VMware"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="139"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="netbios-ssn" method="table" conf="3"/></port>
+<port protocol="tcp" portid="445"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="microsoft-ds" method="table" conf="3"/></port>
+</ports>
+<times srtt="93982" rttvar="107798" to="525174"/>
+</host>
+<runstats><finished time="1558572736" timestr="Wed May 22 20:52:16 2019" elapsed="74.41" summary="Nmap done at Wed May 22 20:52:16 2019; 20 IP addresses (19 hosts up) scanned in 74.41 seconds" exit="success"/><hosts up="19" down="1" total="20"/>
+</runstats>
+</nmaprun>

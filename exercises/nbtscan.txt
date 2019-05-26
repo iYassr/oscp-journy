@@ -1,0 +1,20 @@
+Doing NBT name scan for addresses from 10.11.1.0/24
+
+IP address       NetBIOS Name     Server    User             MAC address      
+------------------------------------------------------------------------------
+10.11.1.5        ALICE            <server>  ALICE            00:50:56:89:7e:0d
+10.11.1.22       BARRY            <server>  BARRY            00:00:00:00:00:00
+10.11.1.31       RALPH            <server>  JFK              00:50:56:89:4a:c6
+10.11.1.24       PAYDAY           <server>  PAYDAY           00:00:00:00:00:00
+10.11.1.73       GAMMA            <server>  <unknown>        00:50:56:93:24:b3
+10.11.1.75       BRUCE            <server>  <unknown>        00:50:56:93:4a:82
+10.11.1.136      SUFFERANCE       <server>  SUFFERANCE       00:00:00:00:00:00
+10.11.1.145      HELPDESK         <server>  <unknown>        00:50:56:89:59:1b
+10.11.1.202      ORACLE           <server>  TEST             00:50:56:89:1f:9b
+10.11.1.218      OBSERVER         <server>  <unknown>        00:50:56:93:1e:a2
+10.11.1.220      MASTER           <server>  <unknown>        00:50:56:93:0b:6b
+10.11.1.221      SLAVE            <server>  <unknown>        00:50:56:93:0c:ad
+10.11.1.223      JEFF             <server>  <unknown>        00:50:56:89:72:ae
+10.11.1.227      JD               <server>  HOMER            00:50:56:89:33:b2
+10.11.1.229      MAIL             <server>  ADD              00:50:56:93:14:df
+10.11.1.230      KEVIN            <server>  <unknown>        00:50:56:89:14:2b

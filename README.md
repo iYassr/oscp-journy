@@ -16,7 +16,7 @@ in the name of Allah, the most gracful the most merciful
 - [Post Exploitation](#post-exploitation)
   - [Privilege Escalation](#privilege-escalation)
 - [VMware](#vmware)
-- [Pytho2019-05-23 01:45:00n](#pytho2019-05-23-014500n)
+- [Python](#python)
 - [Resources](#resources)
 - [## Diary](#diary)
 
@@ -41,6 +41,13 @@ Terminology
 - udp scan
   * empty packet is sent, no response? open, icmp packet unreachable response? closed. weird * 
 - nmap tcp 65000 generated 4.5MB traffic, full subnet? around 1GB
+- netbios     
+  * it shouldn't be used any more, it was used for DNS to resolve local names
+- SMTP VS IMAP & POP3 
+  - SMTP > Push protocol ( Send mail), IMAP & POP3 > pull protocols
+
+- SNMP Community String
+  - more of an ID that is sent with every request 
 
   
 
@@ -97,6 +104,7 @@ Windows
 Enumration 
 ==========================
 
+
 OSINT
 -----------------------
 
@@ -117,6 +125,7 @@ OSINT
 
 Port Scanning 
 ------------------------
+
 
 - ping scan  
 `nmap -sP $ip`
@@ -146,17 +155,42 @@ Port Scanning
 - good mass scan from external  
 `nmap -sP -PE -PS21,22,23,25,80,113,31339,443,445,3389,111 -PA80,113,44,10042 --source-port 53 -iL ips.txt`
 
-
 - SSH
 - DNS
 - SMTP
+  - check valid users 
+  ```nc $ip 25   
+  VRFY <user>```
+  `smtp_vrfy_users.py <host> <users>`
 - POP3
 - Netbios 
+  `nbtscan -r $ips/24`
+  - null session enumration
+  `enum4linux -a $ip` 
+  - emum4linux multiple hosts
+  `for ip in $(cat smb_hosts); do enum4linux $ip > enum4linux_$ip.txt; done` 
 - SMB
+`nmap --script=smb* $ip`
 - NFS
 - RPC
-- SMTP
 - SNMP
+  - onesixtyone > snmp scanner, views servers with their community strings, then can be scanned with snmpwalk
+  `onesixtyone -c community.txt -i subnet_ips.txt`
+  - snmpwalk
+    - Enumerating the Entire MIB Tree
+     `snmpwalk -c public -v1 $ip`  
+    - enumrating windows users
+    `snmpwalk -c public -v1 $ip 1.3.6.1.4.1.77.1.2.25`   
+    - Enumerating Running Windows Processes:
+    `snmpwalk -c public -v1 $ip 1.3.6.1.2.1.25.4.2.1.2` 
+    - Enumerating Open TCP Ports   
+    ` snmpwalk -c public -v1 $ip 1.3.6.1.2.1.6.13.1.3 `
+    - Enumerating Installed Software   
+    ` snmpwalk -c public -v1 $ip 1.3.6.1.2.1.25.6.3.1.2`
+  - snmp-check, enumrates and displays values in human readable format, AWESOME!    
+  
+  `for ip in $(cat onesixyone.txt); do snmp-check $ip; do > mega_snmpchek.txt`
+
 - HTTP
 
 
@@ -203,7 +237,7 @@ VMware
     `sudo vmhgfs-fuse .host:/ /mnt/hgfs/ -o allow_other -o uid=1000`
 
 
-Pytho2019-05-23 01:45:00n
+Python 
 ===========================
 
 - read from file and loop
@@ -211,6 +245,16 @@ Pytho2019-05-23 01:45:00n
 urls = open('file', 'r/w/b')
 for url in urls():
     print(os.system('host {}'.format(url)))
+```
+- open a socket
+```python
+import socket   
+s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+connect = s.connect((host, 25))
+banner = s.recv(1024)
+print(banner)
+s.send('command')
+s.recv(1024)
 ```
 
 
