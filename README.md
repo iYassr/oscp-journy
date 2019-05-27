@@ -125,6 +125,13 @@ OSINT
 
 Port Scanning 
 ------------------------
+- iptables - bandwidh monitoring
+`iptables -I OUTPUT 1 -s $ip -j ACCEPT` 
+`iptables -I INPUT 1 -s $ip -j ACCEPT`
+`iptables -vn -L # numeric list verbose`
+`iptables -Z/-F # flush`
+
+
 
 
 - ping scan  
@@ -159,8 +166,10 @@ Port Scanning
 - DNS
 - SMTP
   - check valid users 
-  ```nc $ip 25   
-  VRFY <user>```
+  ```
+  nc $ip 25   
+  VRFY <user>
+  ```   
   `smtp_vrfy_users.py <host> <users>`
 - POP3
 - Netbios 
@@ -187,8 +196,7 @@ Port Scanning
     ` snmpwalk -c public -v1 $ip 1.3.6.1.2.1.6.13.1.3 `
     - Enumerating Installed Software   
     ` snmpwalk -c public -v1 $ip 1.3.6.1.2.1.25.6.3.1.2`
-  - snmp-check, enumrates and displays values in human readable format, AWESOME!    
-  
+  - snmp-check, enumrates and displays values in human readable format, AWESOME!     
   `for ip in $(cat onesixyone.txt); do snmp-check $ip; do > mega_snmpchek.txt`
 
 - HTTP
