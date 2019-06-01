@@ -48,6 +48,11 @@ Terminology
 
 - SNMP Community String
   - more of an ID that is sent with every request 
+- SOCKS4 vs SOCKS5 vs HTTP Connect vs VPN
+  - SOCKS4 -> TCP Proxy, session layer
+  - SOCKS5 -> Same but more security (authanticaiton)
+  - HTTP Connect -> Only http traffic 
+  - VPN -> Layer 3, supports ICMP, UDP and all 
 
   
 
@@ -205,6 +210,45 @@ Port Scanning
 
 Buffer Over Flow        
 ==========================
+- how to find buffer overflow? 
+  - fuzzing
+  - source code review
+  - reverse engineering
+- steps 
+1.  fuzz 
+2.  crash
+3.  find location of EIP 
+4.  overwright EIP location to the memory address of the start of the shell code
+5.  inject shellcode + NOP into the input 
+6.  profit
+
+- Find bufferoverflow in Slmail
+  1. Fuzzing, 200Bytes++
+  2. crashed at 2700byte?
+  3. use pattern_create.rb -l 2700 and crash it
+  4. find the value of EIP and copy it
+  5. use pattern_offset -l 2700 -q 4436944? = 2607
+  6. A*2607 + B*4 + C*500? good? 
+  7. find bad chars by sending this payload after EIP, A*2607 + B*4 + badchars 
+  8. follow esp address dump > find chars not following the pattern
+  9. found something? remove it from the payload and repeat
+
+
+- good resource about registers
+https://wiki.skullsecurity.org/index.php?title=Registers
+- Great Buffer overflow explination (Arabic)
+https://www.youtube.com/watch?v=B1emU0Kp-uk
+https://www.youtube.com/watch?v=felvN0zJxPg
+
+- registers
+  - EIP 
+    - instruction pointer -> points to the next command address 
+  - ESP
+    - stores the return function address 
+    - top of the stack
+    - uses the stack to store values 
+
+
 
 
 Post Exploitation     
