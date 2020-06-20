@@ -349,28 +349,3 @@ Resources
 http://blog.g0tmi1k.com/2011/08/basic-linux-privilege-escalation/       
 - windows privlage escilation     
 http://www.fuzzysecurity.com/tutorials/16.html
-
-## Diary        
-===========================
-
-
-**2019-05-21 05:45:06  Day 1**    
-setting up the environment   
-ssh tunnel   
-ssh public/private key   
-vmware setup   
-debugging   
-vscode    
-burp issur   
-soo much troubleshooting,    
-
-**2019-05-21 05:45:06  Day 2**   
-scripted networking confifurations,   
-started wrting notes,   
-started the pdf   
-page 56/380 haha   
-
-I feel pretty tired now, i need to sleep asap   
-alhamdulilah   
-
-**2019-05-22 05:06:52**
